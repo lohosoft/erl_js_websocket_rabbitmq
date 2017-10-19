@@ -8,4 +8,4 @@ ebin/*.beam
 rel/example_project
 .concrete/DEV_MODE
 .rebar
-.erlang.mk
+erlang.mk -diff
