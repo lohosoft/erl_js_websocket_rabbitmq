@@ -1,5 +1,5 @@
 %% coding: utf-8
-%% script generated at {2017,10,19} {16,9,39}
+%% script generated at {2017,10,19} {17,41,0}
 {script,
     {"erl_js_websocket_rabbitmq_release","1"},
     [{preLoaded,
@@ -132,7 +132,9 @@
           cowboy_static,cowboy_stream,cowboy_stream_h,cowboy_sub_protocol,
           cowboy_sup,cowboy_tls,cowboy_websocket]},
      {path,["$ROOT/lib/erl_js_websocket_rabbitmq-0.1.0/ebin"]},
-     {primLoad,[erl_js_websocket_rabbitmq_app,erl_js_websocket_rabbitmq_sup]},
+     {primLoad,
+         [erl_js_websocket_rabbitmq,erl_js_websocket_rabbitmq_app,
+          erl_js_websocket_rabbitmq_sup,rabbit_client]},
      {path,["$ROOT/lib/sasl-3.1/ebin"]},
      {primLoad,
          [alarm_handler,erlsrv,format_lib_supp,misc_supp,rb,rb_format_supp,
@@ -502,8 +504,9 @@
                    {vsn,"0.1.0"},
                    {id,[]},
                    {modules,
-                       [erl_js_websocket_rabbitmq_app,
-                        erl_js_websocket_rabbitmq_sup]},
+                       [erl_js_websocket_rabbitmq,
+                        erl_js_websocket_rabbitmq_app,
+                        erl_js_websocket_rabbitmq_sup,rabbit_client]},
                    {registered,[erl_js_websocket_rabbitmq_sup]},
                    {applications,[kernel,stdlib,amqp_client,sync,cowboy]},
                    {included_applications,[]},
